@@ -1,0 +1,661 @@
+.app-shell {
+display: flex;
+flex-direction: column;
+height: 100vh;
+height: 100dvh;
+min-height: 500px;
+overflow: hidden;
+color: #ffffff;
+background: #000000;
+}
+
+.app-header {
+z-index: 20;
+display: flex;
+align-items: center;
+gap: 12px;
+flex-shrink: 0;
+height: 67px;
+padding: 0 10px 0 18px;
+background: #000000;
+}
+
+.app-logo {
+display: grid;
+place-items: center;
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+border: 0;
+border-radius: 50%;
+color: #000000;
+background: #ffffff;
+font-size: 29px;
+font-weight: 800;
+cursor: pointer;
+}
+
+.app-home-button {
+display: grid;
+place-items: center;
+width: 55px;
+height: 55px;
+flex-shrink: 0;
+border: 0;
+border-radius: 50%;
+color: #ffffff;
+background: #202020;
+font-size: 31px;
+cursor: pointer;
+}
+
+.app-home-button:hover {
+background: #303030;
+}
+
+.app-search {
+flex: 1;
+min-width: 120px;
+max-width: 560px;
+}
+
+.app-search .music-topbar {
+height: 56px;
+padding: 0;
+border: 0;
+background: transparent;
+}
+
+.app-search .topbar-welcome,
+.app-search .topbar-home-button {
+display: none;
+}
+
+.app-search .topbar-actions {
+width: 100%;
+}
+
+.app-search .topbar-search {
+width: 100%;
+min-height: 48px;
+padding: 0 18px;
+border: 1px solid transparent;
+border-radius: 28px;
+background: #242424;
+}
+
+.app-search .topbar-search:hover,
+.app-search .topbar-search:focus-within {
+border-color: #ffffff;
+background: #2a2a2a;
+}
+
+.app-search .topbar-search input {
+color: #ffffff;
+font-size: 15px;
+}
+
+.app-search .search-symbol {
+color: #b3b3b3;
+}
+
+.header-links {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 15px;
+margin-left: auto;
+white-space: nowrap;
+}
+
+.header-links button {
+padding: 8px 0;
+border: 0;
+color: #b3b3b3;
+background: transparent;
+font-size: 13px;
+font-weight: 750;
+cursor: pointer;
+}
+
+.header-links button:hover {
+color: #ffffff;
+transform: scale(1.03);
+}
+
+.header-divider {
+width: 1px;
+height: 28px;
+margin: 0 8px;
+background: #ffffff;
+}
+
+.header-links .header-login {
+min-width: 115px;
+min-height: 53px;
+padding: 0 24px;
+border-radius: 28px;
+color: #000000;
+background: #ffffff;
+font-size: 14px;
+}
+
+.header-links .header-login:hover {
+color: #000000;
+background: #eeeeee;
+}
+
+.app-workspace {
+display: grid;
+grid-template-columns: minmax(300px, 23vw) minmax(0, 1fr);
+gap: 9px;
+flex: 1;
+min-height: 0;
+padding: 0 9px 9px 0;
+overflow: hidden;
+}
+
+.music-sidebar {
+height: 100%;
+min-height: 0;
+}
+
+.app-main {
+min-width: 0;
+min-height: 0;
+padding: 27px 30px 135px;
+overflow-y: auto;
+overflow-x: hidden;
+border-radius: 10px;
+background: #121212;
+scrollbar-color: #555 #121212;
+scrollbar-width: thin;
+}
+
+.music-section {
+margin: 0 0 42px;
+}
+
+.music-section-heading {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 12px;
+margin-bottom: 22px;
+}
+
+.music-section-heading h1,
+.music-section-heading h2 {
+margin: 0;
+color: #ffffff;
+font-size: 25px;
+font-weight: 800;
+letter-spacing: -0.7px;
+}
+
+.music-section-heading button {
+flex-shrink: 0;
+padding: 7px 0 7px 12px;
+border: 0;
+color: #b3b3b3;
+background: transparent;
+font-size: 12px;
+font-weight: 750;
+cursor: pointer;
+}
+
+.music-section-heading button:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+
+.trending-grid {
+display: grid;
+grid-auto-columns: minmax(145px, 1fr);
+grid-auto-flow: column;
+gap: 18px;
+overflow-x: auto;
+padding-bottom: 8px;
+scrollbar-width: thin;
+scrollbar-color: #444 #121212;
+}
+
+.trending-card {
+display: flex;
+flex-direction: column;
+gap: 8px;
+min-width: 0;
+padding: 10px;
+border: 0;
+border-radius: 7px;
+color: #ffffff;
+background: transparent;
+text-align: left;
+cursor: pointer;
+transition: background 180ms ease;
+}
+
+.trending-card:hover {
+background: #242424;
+}
+
+.trending-cover {
+display: grid;
+place-items: center;
+width: 100%;
+aspect-ratio: 1;
+overflow: hidden;
+border-radius: 5px;
+color: #ffffff;
+font-size: 46px;
+box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.trending-title {
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+line-clamp: 2;
+overflow: hidden;
+color: #ffffff;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.4;
+}
+
+.trending-artist {
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+line-clamp: 2;
+overflow: hidden;
+color: #b3b3b3;
+font-size: 12px;
+line-height: 1.5;
+}
+
+.trending-card:focus-visible,
+.artist-card:focus-visible {
+outline: 2px solid #ffffff;
+outline-offset: 2px;
+}
+
+.artist-section {
+margin-top: 40px;
+}
+
+.artist-grid {
+display: grid;
+grid-auto-columns: minmax(130px, 1fr);
+grid-auto-flow: column;
+gap: 15px;
+overflow-x: auto;
+padding: 3px 0 12px;
+scrollbar-width: thin;
+scrollbar-color: #444 #121212;
+}
+
+.artist-card {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 9px;
+min-width: 0;
+padding: 10px;
+border: 0;
+border-radius: 7px;
+color: #ffffff;
+background: transparent;
+text-align: left;
+font-size: 13px;
+font-weight: 700;
+cursor: pointer;
+transition: background 180ms ease;
+}
+
+.artist-card:hover {
+background: #242424;
+}
+
+.artist-avatar {
+display: grid;
+place-items: center;
+width: 100%;
+max-width: 180px;
+aspect-ratio: 1;
+border-radius: 50%;
+color: #ffffff;
+background: linear-gradient(135deg, #596b79, #252934);
+font-size: 48px;
+font-weight: 800;
+}
+
+.artist-avatar-1 {
+background: linear-gradient(135deg, #a87552, #563c4c);
+}
+
+.artist-avatar-2 {
+background: linear-gradient(135deg, #607a5c, #29372e);
+}
+
+.artist-avatar-3 {
+background: linear-gradient(135deg, #8377a8, #3b354d);
+}
+
+.artist-card small {
+color: #b3b3b3;
+font-size: 11px;
+font-weight: 400;
+}
+
+.track-results {
+margin-top: 35px;
+}
+
+.track-results .track-section {
+padding: 0 0 20px;
+}
+
+.track-results .track-section-heading {
+display: none;
+}
+
+.results-count {
+color: #b3b3b3;
+font-size: 12px;
+}
+
+.spotify-footer {
+width: 100%;
+margin-top: 50px;
+padding: 36px 0 35px;
+color: #b3b3b3;
+}
+
+.spotify-footer-columns {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+gap: 28px;
+}
+
+.spotify-footer-column {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 14px;
+min-width: 0;
+}
+
+.spotify-footer-column h3 {
+margin: 0 0 5px;
+color: #ffffff;
+font-size: 15px;
+font-weight: 700;
+}
+
+.spotify-footer-column a,
+.spotify-legal-links a {
+color: #b3b3b3;
+font-size: 13px;
+line-height: 1.5;
+text-decoration: none;
+transition: color 180ms ease;
+}
+
+.spotify-footer-column a:hover,
+.spotify-legal-links a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+
+.spotify-social-links {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+}
+
+.spotify-social-links a {
+display: grid;
+place-items: center;
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 50%;
+background: #292929;
+color: #ffffff;
+font-size: 20px;
+font-weight: 700;
+text-decoration: none;
+transition: background 180ms ease;
+}
+
+.spotify-social-links a:hover {
+background: #414141;
+}
+
+.spotify-footer-divider {
+height: 1px;
+margin: 38px 0 28px;
+background: #292929;
+}
+
+.spotify-footer-bottom {
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.spotify-legal-links {
+display: flex;
+flex-wrap: wrap;
+gap: 12px 20px;
+}
+
+.spotify-footer-bottom > span {
+color: #b3b3b3;
+font-size: 12px;
+}
+
+@media (min-width: 1400px) {
+.trending-grid {
+grid-auto-columns: minmax(155px, 1fr);
+}
+
+.app-main {
+padding-right: 36px;
+padding-left: 36px;
+}
+}
+
+@media (max-width: 1200px) {
+.app-header {
+gap: 9px;
+}
+
+.header-links {
+gap: 10px;
+}
+
+.header-links button {
+font-size: 11px;
+}
+
+.header-links .header-login {
+min-width: 88px;
+min-height: 45px;
+}
+
+.app-workspace {
+grid-template-columns: 290px minmax(0, 1fr);
+}
+
+.app-main {
+padding: 24px 20px 135px;
+}
+
+.spotify-footer-columns {
+grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.spotify-social-links {
+grid-column: 1 / -1;
+}
+}
+@media (max-width: 760px) {
+.app-shell {
+height: 100dvh;
+}
+
+.app-header {
+height: auto;
+min-height: 64px;
+flex-wrap: wrap;
+padding: 8px 12px;
+}
+
+.app-logo {
+width: 35px;
+height: 35px;
+font-size: 25px;
+}
+
+.app-home-button {
+width: 40px;
+height: 40px;
+font-size: 24px;
+}
+
+.app-search {
+flex: 1;
+min-width: 0;
+}
+
+.app-search .music-topbar {
+height: 44px;
+}
+
+.app-search .topbar-search {
+min-height: 42px;
+padding: 0 10px;
+}
+
+.app-search .topbar-search input {
+font-size: 12px;
+}
+
+.header-links {
+display: none;
+}
+
+.app-workspace {
+grid-template-columns: minmax(0, 1fr);
+gap: 7px;
+padding: 0 7px 7px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.music-sidebar {
+height: auto;
+max-height: 44vh;
+}
+
+.app-main {
+min-height: 420px;
+padding: 22px 14px 145px;
+overflow: visible;
+}
+
+.music-section {
+margin-bottom: 32px;
+}
+
+.music-section-heading {
+margin-bottom: 16px;
+}
+
+.music-section-heading h1,
+.music-section-heading h2 {
+font-size: 21px;
+}
+
+.trending-grid {
+grid-auto-columns: minmax(135px, 42vw);
+gap: 10px;
+}
+
+.trending-card {
+padding: 8px;
+}
+
+.trending-cover {
+font-size: 38px;
+}
+
+.artist-grid {
+grid-auto-columns: minmax(120px, 38vw);
+gap: 8px;
+}
+
+.artist-card {
+padding: 8px;
+}
+
+.artist-avatar {
+font-size: 38px;
+}
+
+.track-results {
+margin-top: 28px;
+}
+
+.spotify-footer {
+margin-top: 30px;
+padding-top: 25px;
+}
+
+.spotify-footer-columns {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 30px 18px;
+}
+
+.spotify-social-links {
+grid-column: 1 / -1;
+}
+
+.spotify-legal-links {
+gap: 12px 16px;
+}
+
+.spotify-footer-column a {
+overflow-wrap: anywhere;
+}
+}
+
+@media (max-width: 390px) {
+.app-header {
+gap: 7px;
+}
+
+.app-search .topbar-search {
+gap: 6px;
+}
+
+.app-main {
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.music-section-heading h1,
+.music-section-heading h2 {
+font-size: 19px;
+}
+
+.trending-grid {
+grid-auto-columns: 135px;
+}
+
+.spotify-footer-columns {
+grid-template-columns: 1fr;
+}
+}
