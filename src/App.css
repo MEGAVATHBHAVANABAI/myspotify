@@ -232,7 +232,7 @@ color: #ffffff;
 background: transparent;
 text-align: left;
 cursor: pointer;
-transition: *background* 180ms ease;
+transition: background 180ms ease;
 }
 
 .trending-card:hover {
@@ -310,7 +310,7 @@ text-align: left;
 font-size: 13px;
 font-weight: 700;
 cursor: pointer;
-transition: *background* 180ms ease;
+transition: background 180ms ease;
 }
 
 .artist-card:hover {
@@ -409,7 +409,7 @@ color: #ffffff;
 font-size: 20px;
 font-weight: 700;
 text-decoration: none;
-transition: *background* 180ms ease;
+transition: background 180ms ease;
 }
 
 .spotify-social-links a:hover {

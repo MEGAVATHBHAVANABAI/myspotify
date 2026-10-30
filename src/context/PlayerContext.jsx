@@ -153,7 +153,7 @@ export function PlayerProvider({ children }) {
     if (!soundRef.current?.src) return;
     setIsPlaying(false);
     setPlaybackError("Audio is unavailable right now. Please try another track.");
-   }, []);
+  }, []);
   
   const player = {
     tracks,
