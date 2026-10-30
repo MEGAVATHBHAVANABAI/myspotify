@@ -232,7 +232,7 @@ color: #ffffff;
 background: transparent;
 text-align: left;
 cursor: pointer;
-transition: background 180ms ease;
+transition: *background* 180ms ease;
 }
 
 .trending-card:hover {
@@ -310,7 +310,7 @@ text-align: left;
 font-size: 13px;
 font-weight: 700;
 cursor: pointer;
-transition: background 180ms ease;
+transition: *background* 180ms ease;
 }
 
 .artist-card:hover {
@@ -346,23 +346,6 @@ background: linear-gradient(135deg, #8377a8, #3b354d);
 color: #b3b3b3;
 font-size: 11px;
 font-weight: 400;
-}
-
-.track-results {
-margin-top: 35px;
-}
-
-.track-results .track-section {
-padding: 0 0 20px;
-}
-
-.track-results .track-section-heading {
-display: none;
-}
-
-.results-count {
-color: #b3b3b3;
-font-size: 12px;
 }
 
 .spotify-footer {
@@ -426,7 +409,7 @@ color: #ffffff;
 font-size: 20px;
 font-weight: 700;
 text-decoration: none;
-transition: background 180ms ease;
+transition: *background* 180ms ease;
 }
 
 .spotify-social-links a:hover {
@@ -460,7 +443,6 @@ font-size: 12px;
 .trending-grid {
 grid-auto-columns: minmax(155px, 1fr);
 }
-
 .app-main {
 padding-right: 36px;
 padding-left: 36px;
@@ -471,82 +453,67 @@ padding-left: 36px;
 .app-header {
 gap: 9px;
 }
-
 .header-links {
 gap: 10px;
 }
-
 .header-links button {
 font-size: 11px;
 }
-
 .header-links .header-login {
 min-width: 88px;
 min-height: 45px;
 }
-
 .app-workspace {
 grid-template-columns: 290px minmax(0, 1fr);
 }
-
 .app-main {
 padding: 24px 20px 135px;
 }
-
 .spotify-footer-columns {
 grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-
 .spotify-social-links {
 grid-column: 1 / -1;
 }
 }
+
 @media (max-width: 760px) {
 .app-shell {
 height: 100dvh;
 }
-
 .app-header {
 height: auto;
 min-height: 64px;
 flex-wrap: wrap;
 padding: 8px 12px;
 }
-
 .app-logo {
 width: 35px;
 height: 35px;
 font-size: 25px;
 }
-
 .app-home-button {
 width: 40px;
 height: 40px;
 font-size: 24px;
 }
-
 .app-search {
 flex: 1;
 min-width: 0;
 }
-
 .app-search .music-topbar {
 height: 44px;
 }
-
 .app-search .topbar-search {
 min-height: 42px;
 padding: 0 10px;
 }
-
 .app-search .topbar-search input {
 font-size: 12px;
 }
-
 .header-links {
 display: none;
 }
-
 .app-workspace {
 grid-template-columns: minmax(0, 1fr);
 gap: 7px;
@@ -554,79 +521,59 @@ padding: 0 7px 7px;
 overflow-y: auto;
 overflow-x: hidden;
 }
-
 .music-sidebar {
 height: auto;
 max-height: 44vh;
 }
-
 .app-main {
 min-height: 420px;
 padding: 22px 14px 145px;
 overflow: visible;
 }
-
 .music-section {
 margin-bottom: 32px;
 }
-
 .music-section-heading {
 margin-bottom: 16px;
 }
-
 .music-section-heading h1,
 .music-section-heading h2 {
 font-size: 21px;
 }
-
 .trending-grid {
 grid-auto-columns: minmax(135px, 42vw);
 gap: 10px;
 }
-
 .trending-card {
 padding: 8px;
 }
-
 .trending-cover {
 font-size: 38px;
 }
-
 .artist-grid {
 grid-auto-columns: minmax(120px, 38vw);
 gap: 8px;
 }
-
 .artist-card {
 padding: 8px;
 }
-
 .artist-avatar {
 font-size: 38px;
 }
-
-.track-results {
-margin-top: 28px;
-}
-
 .spotify-footer {
 margin-top: 30px;
 padding-top: 25px;
 }
-
 .spotify-footer-columns {
 grid-template-columns: repeat(2, minmax(0, 1fr));
 gap: 30px 18px;
 }
-
 .spotify-social-links {
 grid-column: 1 / -1;
 }
-
 .spotify-legal-links {
 gap: 12px 16px;
 }
-
 .spotify-footer-column a {
 overflow-wrap: anywhere;
 }
@@ -636,25 +583,20 @@ overflow-wrap: anywhere;
 .app-header {
 gap: 7px;
 }
-
 .app-search .topbar-search {
 gap: 6px;
 }
-
 .app-main {
 padding-right: 10px;
 padding-left: 10px;
 }
-
 .music-section-heading h1,
 .music-section-heading h2 {
 font-size: 19px;
 }
-
 .trending-grid {
 grid-auto-columns: 135px;
 }
-
 .spotify-footer-columns {
 grid-template-columns: 1fr;
 }
